@@ -1,0 +1,1240 @@
+{
+  "ArqivoInterior": {
+    "fonts": {
+      "googleFontsHref": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=Sora:wght@300;400;500&family=Lexend:wght@400;500&family=Poppins:wght@500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap",
+      "fontVars": {
+        "--font-body": "\"Sora\", system-ui, sans-serif",
+        "--font-heading": "\"Newsreader\", Georgia, 'Times New Roman', serif",
+        "--font-display": "\"Lexend\", system-ui, sans-serif",
+        "--font-ui": "\"Poppins\", system-ui, sans-serif",
+        "--font-footer": "\"Cormorant Garamond\", Georgia, serif"
+      },
+      "heading": {
+        "family": "Newsreader",
+        "fallback": "Georgia, 'Times New Roman', serif"
+      },
+      "body": {
+        "family": "Sora",
+        "fallback": "system-ui, sans-serif"
+      },
+      "display": {
+        "family": "Lexend",
+        "fallback": "system-ui, sans-serif"
+      },
+      "ui": {
+        "family": "Poppins",
+        "fallback": "system-ui, sans-serif"
+      },
+      "footer": {
+        "family": "Cormorant Garamond",
+        "fallback": "Georgia, serif"
+      },
+      "googleFonts": [
+        {
+          "family": "Newsreader",
+          "spec": "ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600"
+        },
+        {
+          "family": "Sora",
+          "spec": "wght@300;400;500"
+        },
+        {
+          "family": "Lexend",
+          "spec": "wght@400;500"
+        },
+        {
+          "family": "Poppins",
+          "spec": "wght@500;600"
+        },
+        {
+          "family": "Cormorant Garamond",
+          "spec": "wght@400;500;600"
+        }
+      ]
+    },
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Header": "ArqivoHeader1",
+          "Footer": "ArqivoFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Home",
+                "component": "ArqivoHome1"
+              },
+              {
+                "key": "Projects",
+                "component": "ArqivoProjects1"
+              },
+              {
+                "key": "Blog",
+                "component": "ArqivoBlog1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "About",
+                "component": "ArqivoAbout1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "Services",
+                "component": "ArqivoServices1"
+              }
+            ]
+          },
+          "projects": {
+            "components": [
+              {
+                "key": "Projects",
+                "component": "ArqivoProjects1"
+              }
+            ]
+          },
+          "project-detail": {
+            "components": [
+              {
+                "key": "Projects",
+                "component": "ArqivoProjects1"
+              }
+            ]
+          },
+          "testimonials": {
+            "components": [
+              {
+                "key": "Testimonials",
+                "component": "ArqivoTestimonials1"
+              }
+            ]
+          },
+          "blogs": {
+            "components": [
+              {
+                "key": "Blog",
+                "component": "ArqivoBlog1"
+              }
+            ]
+          },
+          "blog-detail": {
+            "components": [
+              {
+                "key": "Blog",
+                "component": "ArqivoBlog1"
+              }
+            ]
+          },
+          "enquire": {
+            "components": [
+              {
+                "key": "Enquire",
+                "component": "ArqivoEnquire1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Contact",
+                "component": "ArqivoContact1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "SiteChrome": {
+        "variants": {
+          "ArqivoHeader1": {
+            "site": {
+              "titleDefault": "ARQIVO | Interior Design Studio",
+              "titleTemplate": "%s | ARQIVO Interior Design Studio",
+              "description": "ARQIVO creates thoughtful, functional and aesthetically refined interiors for homes, offices and hospitality spaces in New York and across the USA.",
+              "copyright": "ARQIVO. All Rights Reserved. Powered by Lestow"
+            },
+            "brand": {
+              "name": "ARQIVO",
+              "tagline": "Interior Design Studio",
+              "phone": "+1 00000 00000",
+              "email": "info@xyz.com",
+              "enquiryEmail": "info@xyz.com",
+              "address": "750 5th Avenue, New York, NY 10019, USA"
+            },
+            "navLinks": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About Us",
+                "href": "/about"
+              },
+              {
+                "label": "Projects",
+                "href": "/projects"
+              },
+              {
+                "label": "Service",
+                "href": "/services"
+              },
+              {
+                "label": "Testimonials",
+                "href": "/testimonials"
+              },
+              {
+                "label": "Blogs",
+                "href": "/blogs"
+              },
+              {
+                "label": "Contact Us",
+                "href": "/contact"
+              }
+            ],
+            "navbar": {
+              "homeAriaLabel": "ARQIVO Interior Design Studio, home",
+              "cta": {
+                "label": "Enquire Now",
+                "href": "/enquire"
+              }
+            }
+          },
+          "ArqivoFooter1": {
+            "footer": {
+              "blurb": "Designing thoughtful, functional and beautiful interiors for modern living and working spaces.",
+              "quickLinksTitle": "Quick Links",
+              "contactTitle": "Get in Touch",
+              "links": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "About Us",
+                  "href": "/about"
+                },
+                {
+                  "label": "Services",
+                  "href": "/services"
+                },
+                {
+                  "label": "Projects",
+                  "href": "/projects"
+                },
+                {
+                  "label": "Contact Us",
+                  "href": "/contact"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Media": {
+        "variants": {
+          "ArqivoImages1": {
+            "images": {
+              "logo": "/logo.png",
+              "logoLight": "/logo-w.png",
+              "heroHome": "/images/home-hero.webp",
+              "pageHero": "/images/page-hero-wood.webp",
+              "aboutFrame": "/images/about-frame.webp",
+              "vision": "/images/vision-photo.webp",
+              "services": "/images/services-photo.webp",
+              "enquire": "/images/enquire-photo.webp"
+            }
+          }
+        }
+      },
+      "Motion": {
+        "variants": {
+          "ArqivoMotion1": {
+            "motion": {
+              "ease": [
+                0.22,
+                1,
+                0.36,
+                1
+              ],
+              "duration": 1,
+              "reveal": {
+                "up": {
+                  "hidden": {
+                    "opacity": 0,
+                    "y": 48
+                  },
+                  "show": {
+                    "opacity": 1,
+                    "x": 0,
+                    "y": 0,
+                    "scale": 1
+                  }
+                },
+                "left": {
+                  "hidden": {
+                    "opacity": 0,
+                    "x": -60
+                  },
+                  "show": {
+                    "opacity": 1,
+                    "x": 0,
+                    "y": 0,
+                    "scale": 1
+                  }
+                },
+                "right": {
+                  "hidden": {
+                    "opacity": 0,
+                    "x": 60
+                  },
+                  "show": {
+                    "opacity": 1,
+                    "x": 0,
+                    "y": 0,
+                    "scale": 1
+                  }
+                },
+                "zoom": {
+                  "hidden": {
+                    "opacity": 0,
+                    "scale": 0.9
+                  },
+                  "show": {
+                    "opacity": 1,
+                    "x": 0,
+                    "y": 0,
+                    "scale": 1
+                  }
+                },
+                "fade": {
+                  "hidden": {
+                    "opacity": 0
+                  },
+                  "show": {
+                    "opacity": 1
+                  }
+                }
+              },
+              "stagger": {
+                "container": {
+                  "hidden": {},
+                  "show": {
+                    "transition": {
+                      "staggerChildren": 0.13
+                    }
+                  }
+                },
+                "item": {
+                  "hidden": {
+                    "opacity": 0,
+                    "y": 56
+                  },
+                  "show": {
+                    "opacity": 1,
+                    "y": 0
+                  }
+                }
+              },
+              "word": {
+                "container": {
+                  "hidden": {},
+                  "show": {
+                    "transition": {
+                      "staggerChildren": 0.07
+                    }
+                  }
+                },
+                "item": {
+                  "hidden": {
+                    "y": "112%"
+                  },
+                  "show": {
+                    "y": "0%"
+                  }
+                }
+              },
+              "clip": {
+                "hidden": {
+                  "clipPath": "inset(0 0 100% 0)"
+                },
+                "show": {
+                  "clipPath": "inset(0 0 0% 0)"
+                }
+              },
+              "page": {
+                "initial": {
+                  "opacity": 0,
+                  "y": 18
+                },
+                "animate": {
+                  "opacity": 1,
+                  "y": 0
+                },
+                "transition": {
+                  "duration": 0.7,
+                  "ease": [
+                    0.22,
+                    1,
+                    0.36,
+                    1
+                  ]
+                }
+              },
+              "preloader": {
+                "duration": 2.2,
+                "storageKey": "arqivo-intro-seen"
+              }
+            }
+          }
+        }
+      },
+      "Home": {
+        "variants": {
+          "ArqivoHome1": {
+            "metadata": {
+              "title": "Interior Design Studio in New York",
+              "description": "ARQIVO designs warm, functional interiors for homes, offices and hospitality spaces. Explore our projects and start your enquiry."
+            },
+            "hero": {
+              "eyebrow": "Interior Design & Architecture",
+              "title": "SPACES DESIGNED",
+              "accent": "for Better Living",
+              "image": "heroHome",
+              "imageAlt": "Terracotta velvet sofa against a soft greige wall with a vase of dried flowers and a Warm Stone colour swatch"
+            },
+            "about": {
+              "eyebrow": "About ARQIVO",
+              "title": "Designing Interiors",
+              "accent": "That Inspire",
+              "paragraphs": [
+                "At ARQIVO, we create thoughtful, functional and aesthetically refined interiors that reflect your lifestyle. From concept to completion, our focus is on quality, detail and timeless design."
+              ],
+              "extraParagraph": "Our studio blends architecture-led planning with warm, tactile materials and thoughtful lighting, so every room feels considered, comfortable and unmistakably yours, today and for years to come.",
+              "button": {
+                "label": "Read More",
+                "href": "/about"
+              },
+              "image": "aboutFrame",
+              "imageAlt": "Sunlit living room with a cream sofa, sculptural lamp and a framed abstract artwork"
+            },
+            "services": {
+              "eyebrow": "Our Services",
+              "title": "Interior Solutions",
+              "accent": "for Every Space",
+              "text": "A complete range of interior design and execution services to transform residential, commercial and hospitality spaces.",
+              "button": {
+                "label": "Explore All Services",
+                "href": "/services"
+              },
+              "image": "services",
+              "imageAlt": "Light, airy living room with a modern beige sofa and wood-toned floor",
+              "items": [
+                {
+                  "title": "Space Planting & Design",
+                  "text": "Functional and aesthetic layouts that make the most of your space.",
+                  "icon": "lamp"
+                },
+                {
+                  "title": "Residential Interiors",
+                  "text": "Personalized interiors that reflect your lifestyle, comfort and taste.",
+                  "icon": "sofa"
+                },
+                {
+                  "title": "Commercial Interiors",
+                  "text": "Modern and efficient design solutions for offices, retail and business spaces.",
+                  "icon": "building"
+                },
+                {
+                  "title": "Turnkey Execution",
+                  "text": "End-to-end project delivery with quality, precision and timely completion.",
+                  "icon": "layers"
+                }
+              ]
+            },
+            "projectsSection": {
+              "eyebrow": "Our Projects",
+              "title": "Featured",
+              "accent": "Projects",
+              "text": "A curated selection of our recent interior projects that reflect our design approach, attention to detail and quality execution."
+            },
+            "blogSection": {
+              "eyebrow": "Our Blogs",
+              "title": "Design Insights &",
+              "accent": "Inspiration",
+              "text": "Tips, trends and expert ideas to help you create beautiful, functional spaces.",
+              "button": {
+                "label": "View All Blogs",
+                "href": "/blogs"
+              }
+            }
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "ArqivoAbout1": {
+            "metadata": {
+              "title": "About Us",
+              "description": "Learn about ARQIVO, an interior design studio creating thoughtful, functional and timeless spaces."
+            },
+            "hero": {
+              "title": "About Us"
+            },
+            "purpose": {
+              "eyebrow": "Our Purpose",
+              "title": "Our Vision &",
+              "accent": "Mission",
+              "text": "Driven by a clear vision and a focused mission to create meaningful, lasting spaces.",
+              "image": "vision",
+              "imageAlt": "Elegant living space with layered lighting and warm neutral furniture",
+              "pillars": [
+                {
+                  "title": "Our Vision",
+                  "icon": "eye",
+                  "text": "To be a trusted interior design studio known for creating inspiring, functional and timeless spaces that enhance the way people live and work."
+                },
+                {
+                  "title": "Our Mission",
+                  "icon": "target",
+                  "text": "To deliver thoughtful, innovative and personalized interior solutions through creativity, quality and a client-focused approach."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Services": {
+        "variants": {
+          "ArqivoServices1": {
+            "metadata": {
+              "title": "Services",
+              "description": "Space planning, residential and commercial interiors, and turnkey execution by ARQIVO Interior Design Studio."
+            },
+            "hero": {
+              "title": "Services"
+            }
+          }
+        }
+      },
+      "Projects": {
+        "variants": {
+          "ArqivoProjects1": {
+            "metadata": {
+              "title": "Projects",
+              "description": "A curated selection of recent ARQIVO interior projects: bedrooms, living rooms, bathrooms and dining spaces."
+            },
+            "hero": {
+              "title": "Projects"
+            },
+            "detail": {
+              "heroTitle": "Project Detail",
+              "eyebrow": "Project Details",
+              "overviewTitle": "Project Overview",
+              "detailsTitle": "Project Details",
+              "highlightsTitle": "Key Highlights",
+              "nextLabel": "Next Project",
+              "breadcrumbRoot": "Home",
+              "breadcrumbProjects": "Projects",
+              "labels": {
+                "type": "Project Type",
+                "location": "Location",
+                "area": "Area",
+                "style": "Style",
+                "completed": "Completed"
+              }
+            },
+            "projects": [
+              {
+                "slug": "serene-master-suite",
+                "no": "01",
+                "title": "Serene Master Suite",
+                "category": "Bedroom",
+                "image": "/images/tile-1.webp",
+                "type": "Residential Interior",
+                "location": "Manhattan, NY, USA",
+                "area": "620 Sq. Ft.",
+                "style": "Warm Minimal",
+                "completed": "Jan, 2026",
+                "overview": "A calm master suite built around a slatted timber headboard wall, layered lighting and soft, tactile textures for restful evenings.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/project-1.webp"
+              },
+              {
+                "slug": "terracotta-lounge",
+                "no": "02",
+                "title": "Terracotta Lounge",
+                "category": "Lounge",
+                "image": "/images/tile-2.webp",
+                "type": "Residential Interior",
+                "location": "Brooklyn, NY, USA",
+                "area": "880 Sq. Ft.",
+                "style": "Earthy Contemporary",
+                "completed": "Feb, 2026",
+                "overview": "An earthy lounge anchored by a sculptural terracotta armchair, with warm plaster tones and carefully placed accents.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/project-2.webp"
+              },
+              {
+                "slug": "modern-living-residence",
+                "no": "03",
+                "title": "Modern Living Residence",
+                "category": "Living Room",
+                "image": "/images/tile-3.webp",
+                "type": "Residential Interior",
+                "location": "Brooklyn, NY, USA",
+                "area": "2,400 Sq. Ft.",
+                "style": "Modern Contemporary",
+                "completed": "Mar, 2026",
+                "overview": "A thoughtfully designed residential interior that blends modern aesthetics with everyday comfort. The space focuses on clean lines, warm textures and a functional layout to create a welcoming and elegant home.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/detail-hero.webp"
+              },
+              {
+                "slug": "luminous-bath-retreat",
+                "no": "04",
+                "title": "Luminous Bath Retreat",
+                "category": "Bathroom",
+                "image": "/images/tile-4.webp",
+                "type": "Residential Interior",
+                "location": "Jersey City, NJ, USA",
+                "area": "180 Sq. Ft.",
+                "style": "Spa Minimal",
+                "completed": "Dec, 2025",
+                "overview": "A spa-inspired bathroom with backlit mirrors, natural stone surfaces and a floating vanity for a serene start to the day.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/project-4.webp"
+              },
+              {
+                "slug": "arched-gallery-home",
+                "no": "05",
+                "title": "Arched Gallery Home",
+                "category": "Entry & Passage",
+                "image": "/images/tile-5.webp",
+                "type": "Residential Interior",
+                "location": "Greenwich, CT, USA",
+                "area": "3,100 Sq. Ft.",
+                "style": "Heritage Modern",
+                "completed": "Nov, 2025",
+                "overview": "A home planned as a sequence of arched thresholds, where sandy plaster walls and long sight-lines create a quiet gallery feel.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/project-5.webp"
+              },
+              {
+                "slug": "sunlit-dining-nook",
+                "no": "06",
+                "title": "Sunlit Dining Nook",
+                "category": "Dining",
+                "image": "/images/tile-6.webp",
+                "type": "Residential Interior",
+                "location": "Hamptons, NY, USA",
+                "area": "420 Sq. Ft.",
+                "style": "Soft Contemporary",
+                "completed": "Oct, 2025",
+                "overview": "A bright dining nook with a round table, upholstered chairs and floor-to-ceiling glazing that pulls the garden indoors.",
+                "highlights": [
+                  {
+                    "label": "Modern & Functional Design",
+                    "icon": "sofa"
+                  },
+                  {
+                    "label": "Premium Materials & Finishes",
+                    "icon": "layers"
+                  },
+                  {
+                    "label": "Warm & Inviting Ambience",
+                    "icon": "leaf"
+                  },
+                  {
+                    "label": "Space Optimization",
+                    "icon": "grid"
+                  }
+                ],
+                "hero": "/images/project-6.webp"
+              }
+            ]
+          }
+        }
+      },
+      "Testimonials": {
+        "variants": {
+          "ArqivoTestimonials1": {
+            "metadata": {
+              "title": "Testimonials",
+              "description": "Real experiences from clients who trusted ARQIVO to design their homes and offices."
+            },
+            "hero": {
+              "title": "Testimonials"
+            },
+            "section": {
+              "eyebrow": "Client Testimonials",
+              "title": "What Our",
+              "accent": "Clients Say",
+              "text": "Real experiences from our valued clients who trusted us to design their spaces."
+            },
+            "ratingLabel": "5 out of 5 stars",
+            "testimonials": [
+              {
+                "name": "Neha Sharma",
+                "role": "Homeowner",
+                "quote": "ARQIVO transformed our home into a beautiful, functional space. The team was professional, creative and truly understood our vision."
+              },
+              {
+                "name": "Rahul Mehta",
+                "role": "Apartment Owner",
+                "quote": "A seamless experience from concept to completion. The design, material selection and attention to detail were outstanding. Highly recommended!"
+              },
+              {
+                "name": "Priya Verma",
+                "role": "Business Owner",
+                "quote": "Creative ideas, practical solutions and timely execution. Our office now feels modern, welcoming and perfectly aligned with our brand."
+              },
+              {
+                "name": "Aman Kapoor",
+                "role": "Residential Client",
+                "quote": "The team at ARQIVO designed a space that is elegant, comfortable and uniquely ours. We are extremely happy with the result."
+              },
+              {
+                "name": "Ritika Saini",
+                "role": "Homeowner",
+                "quote": "Their design approach is both stylish and practical. They listened to our needs carefully and delivered beyond our expectations."
+              },
+              {
+                "name": "Vikram Arora",
+                "role": "Office Client",
+                "quote": "Excellent design sense, great coordination and a very supportive team. Our new space is exactly what we envisioned."
+              }
+            ]
+          }
+        }
+      },
+      "Blog": {
+        "variants": {
+          "ArqivoBlog1": {
+            "metadata": {
+              "title": "Blogs",
+              "description": "Interior design tips, trends and expert ideas from ARQIVO to help you create beautiful, functional spaces."
+            },
+            "hero": {
+              "title": "Blogs"
+            },
+            "detail": {
+              "heroTitle": "Blogs Detail",
+              "eyebrow": "Blog Details",
+              "author": "By ARQIVO",
+              "conclusionTitle": "Conclusion",
+              "categoriesTitle": "Categories",
+              "recentTitle": "Recent Posts"
+            },
+            "categories": [
+              {
+                "label": "Interior Design",
+                "count": "12"
+              },
+              {
+                "label": "Home Decor",
+                "count": "08"
+              },
+              {
+                "label": "Space Planning",
+                "count": "06"
+              },
+              {
+                "label": "Design Tips",
+                "count": "10"
+              },
+              {
+                "label": "Project Insights",
+                "count": "05"
+              }
+            ],
+            "posts": [
+              {
+                "slug": "top-interior-design-trends-for-modern-homes",
+                "category": "Interior Trends",
+                "title": "Top Interior Design Trends for Modern Homes",
+                "date": "Mar 12, 2026",
+                "image": "/images/card-blog-1.webp",
+                "excerpt": "Natural textures, flexible rooms and warm neutrals are shaping modern homes.",
+                "headline": [
+                  "Top Interior Design Trends for",
+                  "Modern Homes in 2026"
+                ],
+                "intro": "Interior design is constantly evolving, and 2026 brings a fresh wave of ideas that focus on comfort, functionality and timeless aesthetics. From natural textures to smart spaces, the latest trends are all about creating homes that feel stylish, personal and truly livable.",
+                "keyTitle": "Key Interior Design Trends in 2026",
+                "points": [
+                  {
+                    "title": "Natural & Earthy Textures",
+                    "text": "Materials like wood, stone and linen bring warmth, character and a calming, organic feel to modern spaces."
+                  },
+                  {
+                    "title": "Functional & Flexible Spaces",
+                    "text": "Multi-purpose areas and smart layouts make homes more adaptable to today's dynamic lifestyles."
+                  },
+                  {
+                    "title": "Warm Neutral Palettes",
+                    "text": "Soft, warm tones create an inviting atmosphere and help spaces feel more open, balanced and timeless."
+                  },
+                  {
+                    "title": "Sustainable Design Choices",
+                    "text": "Eco-friendly materials, energy-efficient solutions and durable finishes are becoming a key part of modern homes."
+                  }
+                ],
+                "quote": "The best home designs in 2026 are not just about looks, but about creating spaces that feel good, work better and stand the test of time.",
+                "conclusion": "The interior design trends of 2026 reflect a perfect balance of style, comfort and practicality. By incorporating natural materials, versatile layouts and sustainable choices, you can create a home that is modern, elegant and future-ready.",
+                "hero": "/images/blog-detail-hero.webp"
+              },
+              {
+                "slug": "smart-space-planning-ideas-for-small-homes",
+                "category": "Space Planning",
+                "title": "Smart Space Planning Ideas for Small Homes",
+                "date": "Mar 05, 2026",
+                "image": "/images/card-blog-2.webp",
+                "excerpt": "Practical layout ideas that make compact homes feel open and organised.",
+                "headline": [
+                  "Smart Space Planning Ideas for",
+                  "Small Homes"
+                ],
+                "intro": "A compact home does not have to feel cramped. With a clear plan for how you move, store and gather, even a modest floor area can feel open, calm and generous.",
+                "keyTitle": "Four Planning Ideas That Work",
+                "points": [
+                  {
+                    "title": "Zone Before You Furnish",
+                    "text": "Define clear zones for living, working and dining first, so every piece of furniture has a purpose and a place."
+                  },
+                  {
+                    "title": "Build Storage Into the Walls",
+                    "text": "Full-height cabinetry, window seats and under-bed drawers hide clutter and keep floors visually clear."
+                  },
+                  {
+                    "title": "Choose Multi-Functional Pieces",
+                    "text": "Extendable tables, nesting stools and sofa beds let one room do the work of two."
+                  },
+                  {
+                    "title": "Keep Sight-Lines Open",
+                    "text": "Low furniture, light colours and mirrors stretch the eye across the room and make it feel larger."
+                  }
+                ],
+                "quote": "Good planning gives a small home the feeling of a large one: every inch earns its place.",
+                "conclusion": "Smart space planning is about clarity. Zone the layout, store things out of sight and let light travel freely, and a small home will feel effortless to live in.",
+                "hero": "/images/blog-2.webp"
+              },
+              {
+                "slug": "easy-styling-tips-to-refresh-your-interiors",
+                "category": "Home Styling",
+                "title": "Easy Styling Tips to Refresh Your Interiors",
+                "date": "Feb 28, 2026",
+                "image": "/images/card-blog-3.webp",
+                "excerpt": "Small, affordable styling moves that give any room a fresh new look.",
+                "headline": [
+                  "Easy Styling Tips to",
+                  "Refresh Your Interiors"
+                ],
+                "intro": "You do not need a full renovation to make a room feel new. A few considered styling moves can change the mood of a space in an afternoon.",
+                "keyTitle": "Simple Ways to Refresh Any Room",
+                "points": [
+                  {
+                    "title": "Layer Textures",
+                    "text": "Mix linen, wool, wood and ceramic so the room feels rich and inviting rather than flat."
+                  },
+                  {
+                    "title": "Edit Your Surfaces",
+                    "text": "Clear tables and shelves, then style a few meaningful objects in odd-numbered groups."
+                  },
+                  {
+                    "title": "Bring in Greenery",
+                    "text": "A branch in a vase or a single statement plant adds life, height and softness instantly."
+                  },
+                  {
+                    "title": "Update the Soft Furnishings",
+                    "text": "New cushion covers, a throw or fresh curtains refresh a room at a fraction of the cost."
+                  }
+                ],
+                "quote": "Styling is the final one per cent that makes a house feel like your home.",
+                "conclusion": "Refreshing a room is about editing, layering and a little greenery. Start with one corner and let the rest follow.",
+                "hero": "/images/blog-3.webp"
+              },
+              {
+                "slug": "choosing-the-right-colour-palette-for-your-home",
+                "category": "Design Tips",
+                "title": "Choosing the Right Colour Palette for Your Home",
+                "date": "Feb 20, 2026",
+                "image": "/images/tile-1.webp",
+                "excerpt": "How to pick a colour story that works with light, space and lifestyle.",
+                "headline": [
+                  "Choosing the Right Colour Palette",
+                  "for Your Home"
+                ],
+                "intro": "Colour sets the mood of every room. The right palette makes spaces feel larger, warmer and more connected, while the wrong one can feel disjointed.",
+                "keyTitle": "How to Build a Palette That Works",
+                "points": [
+                  {
+                    "title": "Start With the Light",
+                    "text": "North-facing rooms like warmer tones, while bright south-facing rooms can carry softer, cooler shades."
+                  },
+                  {
+                    "title": "Follow the 60-30-10 Rule",
+                    "text": "Use a dominant colour for 60 per cent, a secondary for 30 and an accent for the final 10."
+                  },
+                  {
+                    "title": "Repeat Colours Through the Home",
+                    "text": "Carrying two or three shades from room to room creates a calm, cohesive flow."
+                  },
+                  {
+                    "title": "Test Before You Commit",
+                    "text": "Paint large swatches and watch them at different times of day before choosing a final shade."
+                  }
+                ],
+                "quote": "A good palette does not shout. It quietly holds the whole home together.",
+                "conclusion": "Choose colours that suit your light, repeat them with intention and always test first. The result is a home that feels balanced and calm.",
+                "hero": "/images/about.webp"
+              },
+              {
+                "slug": "how-to-create-a-timeless-interior-design",
+                "category": "Interior Design",
+                "title": "How to Create a Timeless Interior Design",
+                "date": "Feb 12, 2026",
+                "image": "/images/tile-4.webp",
+                "excerpt": "Designing spaces that stay beautiful long after trends have passed.",
+                "headline": [
+                  "How to Create a",
+                  "Timeless Interior Design"
+                ],
+                "intro": "Trends come and go, but well-designed interiors stay beautiful. Timeless design is built on proportion, quality materials and restraint.",
+                "keyTitle": "The Foundations of Timeless Design",
+                "points": [
+                  {
+                    "title": "Invest in Quality Materials",
+                    "text": "Solid wood, natural stone and good textiles age gracefully and often look better with time."
+                  },
+                  {
+                    "title": "Keep the Base Neutral",
+                    "text": "Let walls, floors and large furniture stay calm, and bring trends in through easily changed accents."
+                  },
+                  {
+                    "title": "Respect Proportion and Scale",
+                    "text": "Furniture sized to the room and balanced layouts give a space an effortless, settled feel."
+                  },
+                  {
+                    "title": "Make It Personal",
+                    "text": "Collected art, books and objects give a home character that no trend can replace."
+                  }
+                ],
+                "quote": "Timeless does not mean plain. It means every choice was made to last.",
+                "conclusion": "Build on quality, stay neutral at the base and add personality through the things you love. That is how a home stays beautiful for decades.",
+                "hero": "/images/services.webp"
+              },
+              {
+                "slug": "lighting-layers-that-transform-a-room",
+                "category": "Project Insights",
+                "title": "Lighting Layers That Transform a Room",
+                "date": "Feb 04, 2026",
+                "image": "/images/tile-6.webp",
+                "excerpt": "Ambient, task and accent lighting explained, with simple placement rules.",
+                "headline": [
+                  "Lighting Layers That",
+                  "Transform a Room"
+                ],
+                "intro": "Lighting can change how a room looks and feels more than almost any other element. The secret is to layer several sources rather than rely on one.",
+                "keyTitle": "The Three Layers of Light",
+                "points": [
+                  {
+                    "title": "Ambient Lighting",
+                    "text": "Soft, general light from ceiling fixtures or cove lights sets the overall brightness of the room."
+                  },
+                  {
+                    "title": "Task Lighting",
+                    "text": "Focused light for reading, cooking or working keeps you comfortable and reduces eye strain."
+                  },
+                  {
+                    "title": "Accent Lighting",
+                    "text": "Wall washers, picture lights and backlit mirrors add depth and highlight textures and art."
+                  },
+                  {
+                    "title": "Control and Warmth",
+                    "text": "Dimmers and warm 2700K bulbs let you shift from bright and busy to calm and cosy."
+                  }
+                ],
+                "quote": "Great interiors are shaped as much by light as by furniture.",
+                "conclusion": "Layer ambient, task and accent lighting, add dimmers and choose warm tones. Your rooms will instantly feel more inviting.",
+                "hero": "/images/vision.webp"
+              }
+            ]
+          }
+        }
+      },
+      "Enquire": {
+        "variants": {
+          "ArqivoEnquire1": {
+            "metadata": {
+              "title": "Enquire Now",
+              "description": "Share your project requirements with ARQIVO and our design team will get back to you shortly."
+            },
+            "hero": {
+              "title": "Enquire Now"
+            },
+            "section": {
+              "eyebrow": "Enquire Now",
+              "title": "Get in Touch for",
+              "accent": "Enquiry",
+              "text": "Have a question, project requirement or service enquiry? Share your details and our team will get back to you shortly."
+            },
+            "image": "enquire",
+            "imageAlt": "Warm armchair beside a leafy plant and a glowing floor lamp",
+            "formTitle": "Send Your Enquiry",
+            "form": {
+              "fields": {
+                "name": {
+                  "label": "Your Name",
+                  "placeholder": "Your Name *",
+                  "error": "Please enter your name"
+                },
+                "email": {
+                  "label": "Email Address",
+                  "placeholder": "Email Address *",
+                  "error": "Enter a valid email address"
+                },
+                "phone": {
+                  "label": "Phone Number",
+                  "placeholder": "Phone Number *",
+                  "error": "Enter a valid phone number"
+                },
+                "topic": {
+                  "label": "Enquiry For",
+                  "placeholder": "Enquiry For *",
+                  "error": "Please choose an option"
+                },
+                "subject": {
+                  "label": "Subject",
+                  "placeholder": "Subject *",
+                  "error": "Please add a subject"
+                },
+                "message": {
+                  "label": "Your Message",
+                  "placeholder": "Your Message *",
+                  "error": "Tell us a little more (10+ characters)"
+                }
+              },
+              "topics": [
+                "Residential Interiors",
+                "Commercial Interiors",
+                "Space Planning & Design",
+                "Turnkey Execution",
+                "Design Consultation"
+              ],
+              "submit": "Submit Enquiry",
+              "sending": "Sending…",
+              "successTitle": "Thank you,",
+              "successAccent": "we'll be in touch",
+              "successText": "Your enquiry has been received. Our design team will get back to you shortly.",
+              "again": "Send another",
+              "submitDelayMs": 1100
+            }
+          }
+        }
+      },
+      "Contact": {
+        "variants": {
+          "ArqivoContact1": {
+            "metadata": {
+              "title": "Contact Us",
+              "description": "Have a project in mind? Reach out to ARQIVO for expert interior design solutions in New York, USA."
+            },
+            "hero": {
+              "title": "Contact Us"
+            },
+            "section": {
+              "eyebrow": "Contact Us",
+              "title": "Get in Touch with",
+              "accent": "ARQIVO",
+              "text": "Have a project in mind? Reach out to our team for expert interior design solutions."
+            },
+            "cards": [
+              {
+                "key": "phone",
+                "title": "Call Us"
+              },
+              {
+                "key": "email",
+                "title": "Email Us"
+              },
+              {
+                "key": "address",
+                "title": "Our Location"
+              }
+            ],
+            "formTitle": "Send Us a Message",
+            "form": {
+              "submit": "Send Message",
+              "successText": "Your message has been received. Our design team will get back to you shortly."
+            },
+            "areas": [
+              {
+                "icon": "sofa",
+                "title": "Interior Design",
+                "text": "Home & Commercial"
+              },
+              {
+                "icon": "layers",
+                "title": "Space Planning",
+                "text": "Functional & Aesthetic"
+              },
+              {
+                "icon": "ruler",
+                "title": "Design Consultation",
+                "text": "Expert Guidance"
+              }
+            ]
+          }
+        }
+      },
+      "Misc": {
+        "variants": {
+          "ArqivoMisc1": {
+            "notFound": {
+              "eyebrow": "Error 404",
+              "title": "Page",
+              "accent": "not found",
+              "text": "The page you are looking for may have moved or no longer exists.",
+              "button": {
+                "label": "Back to Home",
+                "href": "/"
+              }
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "headerHeight": "clamp(4.2rem,7.8vw,7rem)",
+      "side": "clamp(1rem,3.5vw,3.6rem)",
+      "sectionY": "clamp(1.8rem,3.8vw,3.6rem)",
+      "maxWidth": "1600px",
+      "container": "mx-auto w-full max-w-[1600px] px-(--side)",
+      "section": "py-(--section-y)"
+    },
+    "typography": {
+      "heroTitle": "font-(family-name:--font-display) text-[clamp(2.2rem,6.8vw,6.5rem)] font-normal leading-none tracking-[-0.045em]",
+      "h2": "text-[clamp(2.15rem,4.6vw,4.4rem)] font-normal leading-[1.08]",
+      "h2Xl": "text-[clamp(2.15rem,4.6vw,4.4rem)] font-normal leading-[1.08]",
+      "h2Bold": "text-[clamp(2.15rem,4.6vw,4.4rem)] font-semibold leading-[1.08]",
+      "h2Sm": "text-[clamp(2.15rem,4.6vw,4.4rem)] font-normal leading-[1.08]",
+      "h2Detail": "text-[clamp(2.1rem,4.9vw,4.8rem)] font-medium leading-[1.06]",
+      "h3Lg": "text-[clamp(1.9rem,4.3vw,4.2rem)] font-medium leading-[1.1]",
+      "h3Md": "text-[clamp(1.7rem,3.7vw,3.6rem)] font-medium leading-[1.1]",
+      "h3Sm": "text-[clamp(1.6rem,3.2vw,3rem)] font-medium leading-[1.1]",
+      "formTitle": "text-[clamp(1.55rem,2.8vw,2.6rem)] font-semibold leading-[1.15]",
+      "itemTitle": "text-[clamp(1.4rem,2.5vw,2.5rem)] font-normal leading-[1.15]",
+      "pillarTitle": "text-[clamp(1.5rem,2.6vw,2.6rem)] font-medium leading-[1.15]",
+      "cardTitle": "text-[clamp(1.25rem,1.76vw,1.75rem)] font-normal leading-[1.25]",
+      "p": "text-[clamp(0.95rem,1.35vw,1.18rem)] leading-[1.6]",
+      "pLg": "text-[clamp(0.95rem,1.35vw,1.18rem)] leading-[1.6]",
+      "pSm": "text-[clamp(0.95rem,1.35vw,1.18rem)] leading-[1.6]",
+      "pXl": "text-[clamp(0.95rem,1.35vw,1.18rem)] leading-[1.6]",
+      "small": "text-[clamp(0.85rem,1.25vw,1.1rem)] leading-[1.55]",
+      "xs": "text-[clamp(0.75rem,0.96vw,0.9rem)] leading-[1.5]",
+      "eyebrowSm": "text-[clamp(0.7rem,1.05vw,0.92rem)] font-medium uppercase tracking-[0.28em]",
+      "eyebrowMd": "text-[clamp(0.7rem,1.05vw,0.92rem)] font-medium uppercase tracking-[0.28em]",
+      "eyebrowLg": "text-[clamp(0.7rem,1.05vw,0.92rem)] font-semibold uppercase tracking-[0.28em]",
+      "nav": "font-(family-name:--font-ui) text-[clamp(0.95rem,1.25vw,1.12rem)] font-medium",
+      "button": "font-(family-name:--font-ui) text-[clamp(0.85rem,1.12vw,1.05rem)] font-medium",
+      "footerTitle": "font-(family-name:--font-footer) text-[clamp(1.5rem,2.34vw,2.4rem)] font-medium leading-[1.2]",
+      "listTitle": "text-[clamp(1.3rem,1.95vw,2rem)] font-medium leading-[1.2]",
+      "sideTitle": "text-[clamp(1.4rem,2.05vw,2.1rem)] font-medium leading-[1.15] whitespace-nowrap",
+      "number": "font-(family-name:--font-footer) text-[clamp(1.1rem,2.3vw,2.2rem)] font-semibold leading-none",
+      "quote": "text-[clamp(1.1rem,1.6vw,1.6rem)] italic leading-[1.4]",
+      "h2Post": "text-[clamp(2rem,4.4vw,4.3rem)] font-medium leading-[1.08]"
+    }
+  }
+}
