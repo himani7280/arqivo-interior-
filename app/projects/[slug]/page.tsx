@@ -44,7 +44,7 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   return (
     <>
-      <PageHero title={project.title} />
+      <PageHero title={project.title} showBreadcrumb={false} />
 
       <section className={`overflow-hidden bg-[#fffdfc] ${LAYOUT.section}`}>
         <div className={LAYOUT.container}>

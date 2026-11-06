@@ -78,7 +78,7 @@ export type Post = {
   conclusion: string;
 };
 
-export type Testimonial = { name: string; role: string; quote: string };
+export type Testimonial = { name: string; role: string; quote: string; avatar?: string };
 export type Service = { title: string; text: string; icon: IconName };
 
 export const PROJECTS = s.Projects.variants.ArqivoProjects1.projects as Project[];

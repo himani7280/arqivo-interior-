@@ -21,18 +21,18 @@ export function HomeHero() {
     <section ref={ref} className="relative isolate h-[30rem] overflow-hidden bg-[#d9cfc9] sm:h-[34rem] md:aspect-[1349/670] md:h-auto">
       <motion.div
         className="absolute inset-0 -z-10"
-        initial={{ scale: 1.14 }}
+        initial={{ scale: 1.15 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 3, ease: "easeOut" }}
+        transition={{ duration: 2.5, ease: "easeOut" }}
       >
-        <Image src={IMG[hero.image]} alt={hero.imageAlt} fill priority quality={90} sizes="100vw" className="object-cover object-[50%_60%]" />
+        <Image src={IMG[hero.image]} alt={hero.imageAlt} fill priority unoptimized sizes="100vw" className="object-cover object-[50%_60%]" />
       </motion.div>
 
       <motion.div style={{ y: textY, opacity: textOpacity }} className="absolute inset-x-0 top-[7%] px-4 text-center md:top-[9%]">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={done ? { opacity: 1, y: 0 } : undefined}
-          transition={{ duration: 0.9, ease: MOTION.ease }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: MOTION.ease }}
           className={`inline-flex items-center gap-[clamp(0.6rem,1.6vw,1.6rem)] text-[#2a2523]/90 ${TYPE.eyebrowMd}`}
         >
           <span className="h-px w-[clamp(1.5rem,4.2vw,4rem)] bg-[#2a2523]/50" aria-hidden="true" />
@@ -40,8 +40,8 @@ export function HomeHero() {
           <span className="h-px w-[clamp(1.5rem,4.2vw,4rem)] bg-[#2a2523]/50" aria-hidden="true" />
         </motion.p>
         <h1 className="mt-[clamp(0.6rem,1.8vw,1.8rem)] text-[clamp(1.7rem,3.8vw,4rem)] leading-[1.1] text-[#262120]">
-          <WordReveal text={hero.title} trigger={done} className="block font-medium uppercase tracking-[0.03em]" />
-          <WordReveal text={hero.accent} trigger={done} delay={0.35} className="block italic text-[#6d4c3d]" />
+          <WordReveal text={hero.title} trigger={true} className="block font-medium uppercase tracking-[0.03em]" />
+          <WordReveal text={hero.accent} trigger={true} delay={0.2} className="block italic text-[#6d4c3d]" />
         </h1>
       </motion.div>
     </section>

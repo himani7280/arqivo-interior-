@@ -4,7 +4,6 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollProgress } from "@/components/Motion";
 import { MotionProvider } from "@/components/MotionProvider";
-import { Preloader } from "@/components/Preloader";
 import { googleFontsHref, rootVars, sharedContent as shared } from "@/data/data";
 
 const bodyClass = [
@@ -31,7 +30,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className={bodyClass}>
         <MotionProvider>
-          <Preloader />
           <ScrollProgress />
           <Header />
           <main className="flex-1 overflow-x-hidden pt-(--header-h)">{children}</main>

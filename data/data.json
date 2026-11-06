@@ -192,17 +192,13 @@
               {
                 "label": "Blogs",
                 "href": "/blogs"
-              },
-              {
-                "label": "Contact Us",
-                "href": "/contact"
               }
             ],
             "navbar": {
               "homeAriaLabel": "ARQIVO Interior Design Studio, home",
               "cta": {
-                "label": "Enquire Now",
-                "href": "/enquire"
+                "label": "Contact Us",
+                "href": "/contact"
               }
             }
           },
@@ -371,7 +367,7 @@
               "page": {
                 "initial": {
                   "opacity": 0,
-                  "y": 18
+                  "y": 0
                 },
                 "animate": {
                   "opacity": 1,
@@ -768,31 +764,37 @@
               {
                 "name": "Neha Sharma",
                 "role": "Homeowner",
+                "avatar": "/images/avatars/avatar-1.webp",
                 "quote": "ARQIVO transformed our home into a beautiful, functional space. The team was professional, creative and truly understood our vision."
               },
               {
                 "name": "Rahul Mehta",
                 "role": "Apartment Owner",
+                "avatar": "/images/avatars/avatar-2.webp",
                 "quote": "A seamless experience from concept to completion. The design, material selection and attention to detail were outstanding. Highly recommended!"
               },
               {
                 "name": "Priya Verma",
                 "role": "Business Owner",
+                "avatar": "/images/avatars/avatar-3.webp",
                 "quote": "Creative ideas, practical solutions and timely execution. Our office now feels modern, welcoming and perfectly aligned with our brand."
               },
               {
                 "name": "Aman Kapoor",
                 "role": "Residential Client",
+                "avatar": "/images/avatars/avatar-4.webp",
                 "quote": "The team at ARQIVO designed a space that is elegant, comfortable and uniquely ours. We are extremely happy with the result."
               },
               {
                 "name": "Ritika Saini",
                 "role": "Homeowner",
+                "avatar": "/images/avatars/avatar-5.webp",
                 "quote": "Their design approach is both stylish and practical. They listened to our needs carefully and delivered beyond our expectations."
               },
               {
                 "name": "Vikram Arora",
                 "role": "Office Client",
+                "avatar": "/images/avatars/avatar-6.webp",
                 "quote": "Excellent design sense, great coordination and a very supportive team. Our new space is exactly what we envisioned."
               }
             ]
@@ -813,6 +815,8 @@
               "heroTitle": "Blogs Detail",
               "eyebrow": "Blog Details",
               "author": "By ARQIVO",
+              "breadcrumbRoot": "Home",
+              "breadcrumbBlogs": "Blogs",
               "conclusionTitle": "Conclusion",
               "categoriesTitle": "Categories",
               "recentTitle": "Recent Posts"
@@ -1191,6 +1195,21 @@
                 "label": "Back to Home",
                 "href": "/"
               }
+            },
+            "thankYou": {
+              "metadata": {
+                "title": "Thank You | ARQIVO",
+                "description": "Thank you for reaching out to ARQIVO Interior Design Studio. We will get back to you shortly."
+              },
+              "eyebrow": "Submission Successful",
+              "title": "Thank You for",
+              "accent": "Reaching Out",
+              "text": "We have received your message. Our design team will review your requirements and get back to you within 24 hours to discuss your space.",
+              "button": {
+                "label": "Back to Home",
+                "href": "/"
+              },
+              "immediateAssistance": "Need immediate assistance?"
             }
           }
         }

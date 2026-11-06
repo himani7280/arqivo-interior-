@@ -3,11 +3,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent, type ReactNode } from "react";
-import { contactContent, enquireContent, MOTION, TYPE } from "@/data/data";
-import { CheckCircleIcon, ChevronDownIcon } from "@/lib/icons";
+import { contactContent, enquireContent, TYPE } from "@/data/data";
+import { ChevronDownIcon } from "@/lib/icons";
 import { FormButton } from "./Button";
 
-const { fields, topics, submit, sending, successTitle, successAccent, successText, again, submitDelayMs } = enquireContent.form;
+const { fields, topics, submit, sending } = enquireContent.form;
 
 const FIELD =
   "w-full rounded-none border border-[#ddd3cd] bg-white px-[clamp(1rem,1.4vw,1.35rem)] text-[clamp(0.95rem,1.2vw,1.1rem)] text-[#211b18] outline-none transition placeholder:text-[#736862] focus:border-[#9b7b69] focus:ring-3 focus:ring-[#9b7b69]/15 aria-[invalid=true]:border-[#b4342d]";
@@ -55,9 +55,9 @@ function Field({ label, error, children }: { label: string; error?: string; chil
 export function EnquiryForm({ variant }: { variant: Variant }) {
   const router = useRouter();
   const [errors, setErrors] = useState<Errors>({});
-  const [status, setStatus] = useState<"idle" | "sending" | "done">("idle");
+  const [status, setStatus] = useState<"idle" | "sending">("idle");
 
-  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
     const found = validate(new FormData(form), variant);
@@ -65,38 +65,11 @@ export function EnquiryForm({ variant }: { variant: Variant }) {
     if (Object.keys(found).length > 0) return;
 
     setStatus("sending");
-    // Demo submit: wire this to your API route / email service.
-    await new Promise((resolve) => setTimeout(resolve, submitDelayMs));
-    setStatus("done");
     form.reset();
     router.push("/thank-you");
   };
 
   const invalid = (key: FieldKey) => (errors[key] ? true : undefined);
-  const message = variant === "contact" ? contactContent.form.successText : successText;
-
-  if (status === "done") {
-    return (
-      <motion.div
-        role="status"
-        initial={{ opacity: 0, scale: 0.94 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7, ease: MOTION.ease }}
-        className="grid min-h-[20rem] place-items-center text-center"
-      >
-        <div>
-          <CheckCircleIcon strokeWidth={1.1} className="mx-auto size-[clamp(3rem,4.5vw,4.5rem)] text-[#8a5230]" />
-          <h3 className={`mt-5 text-[#211b18] ${TYPE.h3Sm}`}>
-            {successTitle} <em className="text-[#8a5230]">{successAccent}</em>
-          </h3>
-          <p className={`mx-auto mt-3 max-w-md text-[#3d3430] ${TYPE.p}`}>{message}</p>
-          <button type="button" onClick={() => setStatus("idle")} className={`mt-6 text-[#8a5230] underline underline-offset-4 ${TYPE.small}`}>
-            {again}
-          </button>
-        </div>
-      </motion.div>
-    );
-  }
 
   return (
     <form onSubmit={onSubmit} noValidate className="grid gap-x-[clamp(1rem,2vw,1.8rem)] gap-y-[clamp(1rem,2vw,1.8rem)] sm:grid-cols-2">

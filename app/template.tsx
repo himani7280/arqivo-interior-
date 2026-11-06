@@ -2,8 +2,15 @@
 
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import { MOTION } from "@/data/data";
 
 export default function Template({ children }: { children: ReactNode }) {
-  return <motion.div {...MOTION.page}>{children}</motion.div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
 }

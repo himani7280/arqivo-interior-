@@ -35,7 +35,7 @@ export default async function BlogDetailPage({ params }: Props) {
 
   return (
     <>
-      <PageHero title={post.title} />
+      <PageHero title={post.title} showBreadcrumb={false} />
 
       <article className={`overflow-hidden bg-[#fffdfc] ${LAYOUT.section}`}>
         <div className={`${LAYOUT.container}`}>
@@ -49,6 +49,15 @@ export default async function BlogDetailPage({ params }: Props) {
           <h2 className={`mt-[clamp(0.6rem,1.2vw,1.2rem)] max-w-[62vw] min-w-[min(100%,18rem)] text-[#211b18] ${TYPE.h2Post}`}>
             <WordReveal text={words.join(" ")} accent={accent} />
           </h2>
+          <Reveal>
+            <nav aria-label="Breadcrumb" className={`mt-[clamp(0.8rem,1.6vw,1.6rem)] flex flex-wrap items-center gap-[0.6em] font-(family-name:--font-ui) text-[clamp(0.9rem,1.5vw,1.4rem)] text-[#211b18]`}>
+              <Link href="/" className="transition-colors hover:text-[#8a5230]">{detail.breadcrumbRoot}</Link>
+              <ChevronRightIcon strokeWidth={1.5} className="size-[1em]" />
+              <Link href="/blogs" className="transition-colors hover:text-[#8a5230]">{detail.breadcrumbBlogs}</Link>
+              <ChevronRightIcon strokeWidth={1.5} className="size-[1em]" />
+              <span className="text-[#8a5230]">{post.title}</span>
+            </nav>
+          </Reveal>
           <Reveal delay={0.1}>
             <ul className="mt-[clamp(0.9rem,1.8vw,1.8rem)] flex flex-wrap items-center gap-x-[2vw] gap-y-3 text-[#211b18]">
               <li className={META}>

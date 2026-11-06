@@ -44,10 +44,7 @@ export function Header() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: "-100%", opacity: 0 }}
-        animate={done ? { y: "0%", opacity: 1 } : undefined}
-        transition={{ duration: 0.7, ease: EASE }}
+      <header
         className={`fixed inset-x-0 top-0 z-50 bg-white transition-shadow duration-500 ${
           scrolled ? "shadow-[0_8px_30px_-12px_rgba(53,40,42,0.25)]" : ""
         }`}
@@ -99,7 +96,7 @@ export function Header() {
             </button>
           </div>
         </div>
-      </motion.header>
+      </header>
 
       <AnimatePresence>
         {open && (

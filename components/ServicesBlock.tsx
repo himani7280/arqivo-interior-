@@ -1,5 +1,4 @@
 import { homeContent, IMG, LAYOUT, TYPE } from "@/data/data";
-import { LinkButton } from "./Button";
 import { Icon } from "./Icon";
 import { DrawLine, Frame, Reveal, Stagger, StaggerItem, WordReveal } from "./Motion";
 import { Photo } from "./Photo";
@@ -23,12 +22,7 @@ export function ServicesBlock() {
           <Reveal delay={0.1}>
             <p className={`mt-[clamp(1rem,2.2vw,2.2rem)] max-w-[38vw] min-w-[min(100%,18rem)] text-[#211b18] ${TYPE.p}`}>{services.text}</p>
           </Reveal>
-          <Reveal delay={0.15} className="mt-[clamp(1.4rem,2.8vw,2.8rem)]">
-            <LinkButton href={services.button.href} tone="brown">
-              {services.button.label}
-            </LinkButton>
-          </Reveal>
-          <Frame parallax={6} className="mt-[clamp(1.2rem,2.2vw,2.2rem)] aspect-[486/277] w-full">
+          <Frame parallax={6} className="mt-[clamp(1.4rem,2.6vw,2.6rem)] aspect-[486/277] w-full">
             <Photo src={IMG[services.image]} alt={services.imageAlt} sizes="(min-width: 1024px) 38vw, 100vw" />
           </Frame>
         </div>
