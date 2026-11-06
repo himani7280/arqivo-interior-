@@ -49,22 +49,16 @@ export function PageHero({
 
   return (
     <section className="relative flex h-[19rem] items-end overflow-hidden bg-[#2b201f] sm:h-[23rem] md:aspect-[1349/437] md:h-auto">
-      <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.15 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 2.5, ease: "easeOut" }}
-      >
+      <div className="absolute inset-0">
         <Image
-          src={image || IMG.pageHero}
-          alt={title}
+          src={IMG.pageHero}
+          alt="ARQIVO Banner"
           fill
           priority
-          unoptimized
           sizes="100vw"
           className="object-cover object-[50%_45%]"
         />
-      </motion.div>
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/30" />
 
       <div className={`${LAYOUT.container} relative pb-[clamp(1.5rem,4.6vw,4.6rem)]`}>
